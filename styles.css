@@ -23,16 +23,43 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    background-color: rgb(240, 218, 238);
 }
 
-#main-header img{
-    height: 90px;
+#main-title{
+    text-transform:uppercase;
+    margin: auto;
 }
+
+#main-title #the{
+    color: rgb(5, 131, 16);
+    margin:0;
+    margin:auto;
+    padding: 0;
+    padding-top: 10px;
+    font-size: 25px;
+    width: 80px;
+}
+
+#main-title #country{
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    font-family: Train One;
+    font-size: 60px;
+    color: rgb(5, 131, 16);
+}
+
+/*#main-header img{
+    height: 90px;
+}*/
 
 #main-header p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 13px;
     color: rgb(66, 64, 64);
+    margin:0;
+    padding: 7px;
 }
 
 #bottom p{
@@ -61,6 +88,7 @@
 #burger{
     font-size: 30px;
     padding: 8px 15px;
+    margin-top:2px;
     background-color:rgb(236, 232, 232) ;
 }
 
@@ -73,7 +101,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top:8px;
         padding: 10px;
         border-top: 5px double rgb(209, 202, 202);
         border-bottom: 5px double rgb(209, 202, 202);
@@ -92,40 +119,40 @@
     #nav-header a:hover{
         color: rgb(119, 5, 129);
     }    
+
 }
 
-#main-content{
-    
+#main-content {
+    display: flex;
+    flex-direction: column;
 }
 
 #first-notice{
-    width: 400px;
-    margin:auto
+    margin-left:10px;
 }
 
 #first-notice h1{
     font-family: Kite One;
     font-size: 28px;
-    width: 400px;
-    margin: 0;
     padding: 7px 0px;
+    width: 90%;
+    margin:0;
 }
 
 #first-notice figure{
     margin:0;
-    margin-bottom: 8px;
 }
 
 #first-notice img{
-    width: 400px;
+    width: 90%;
     box-shadow: 3px 3px 5px grey;
 }
 
 #first-notice figcaption{
-    width: 400px;
     padding-top: 3px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
+    width: 90%;
 }
 
 .dotted-line{
@@ -149,11 +176,50 @@
     padding-left: 6px;
     padding-right: 4px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
-    
-    
+    font-size: 13px;    
 }
+
 .secondary-news img{
     width: 225px;
 }
 
+#coke {
+    width: 100%;  
+}
+
+footer{
+    background-color: rgb(68, 64, 64);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+footer #magazines{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#foot-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0;
+}
+
+#foot-list li{
+    list-style-type: none;
+    padding: 2px 13px;
+    border-right: 1px solid rgb(202, 198, 198);  
+}
+
+#foot-line{
+    width: 94%;
+    margin: auto;
+    border-top: 1px solid rgb(202, 198, 198);
+}
+
+footer #copy{
+    padding:20px 15px;
+   
+}
