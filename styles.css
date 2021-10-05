@@ -155,7 +155,7 @@
         width: 100%;
     }
 
-    .second #coke{
+    #coke a{
         width: 250%; 
     }
 }
@@ -228,7 +228,6 @@
 
 .secondary-news .second:hover{
     background-color: rgb(73, 70, 70);
-
 }
 
 .secondary-news img{
@@ -236,7 +235,8 @@
     height: 100%;
 }
 
-#coke {
+#coke img{
+    margin:0;
     width: 100%;  
 }
 
