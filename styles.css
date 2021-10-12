@@ -86,80 +86,6 @@
     display: none;
 }
 
-@media only screen and (min-width: 480px) {
-    #burger{
-        display: none;
-    }
-
-    #nav-header{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
-        border-top: 5px double rgb(209, 202, 202);
-        border-bottom: 5px double rgb(209, 202, 202);
-        background-color: rgb(236, 232, 232);
-    }
-    #nav-header a{
-        padding:5px 15px;
-        border-right: 1px solid rgb(209, 202, 202);
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        font-size: 16px;
-        color: rgba(10, 153, 10, 0.644);
-    }
-    
-    #nav-header a:hover{
-        color: rgb(119, 5, 129);
-    }    
-
-    #left-content{
-        margin-top: 20px;
-    }
-
-    .dotted-line{
-        display: none;
-    }
-
-    main #main-content{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-   
-    }
-    #first-notice{
-        width: 50%;
-        margin-top: 50px;
-        order:2;
-    }
-
-    #left-content{
-        width: 25%;
-        order:1;
-    }
-
-    #right-content{
-        width: 25%;
-        order:3;
-    }
-
-    .secondary-news .second{
-        display: flex;
-        flex-direction: column-reverse;     
-    }
-
-    .secondary-news .second img{
-        width: 100%;
-    }
-
-    #coke a{
-        width: 250%; 
-    }
-}
-
 #main-content {
     display: flex;
     flex-direction: column;
@@ -290,3 +216,130 @@ footer #copy{
     padding:20px 15px;
     margin:0;
 }
+
+@media only screen and (min-width: 480px) {
+    #burger{
+        display: none;
+    }
+
+    #nav-header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-top: 5px double rgb(209, 202, 202);
+        border-bottom: 5px double rgb(209, 202, 202);
+        background-color: rgb(236, 232, 232);
+    }
+    #nav-header a{
+        padding:5px 15px;
+        border-right: 1px solid rgb(209, 202, 202);
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: rgba(10, 153, 10, 0.644);
+    }
+    
+    #nav-header a:hover{
+        color: rgb(119, 5, 129);
+    }  
+
+    .dotted-line{
+        display: none;
+    }
+
+    #first-notice{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .secondary-news .second{
+        display: flex;
+        flex-direction: column-reverse; 
+    
+    }
+
+    .secondary-news .second img{
+        width: 100%;
+    }
+
+    #coke a{
+        width:100%; 
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #burger{
+        display: none;
+    }
+
+    #nav-header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-top: 5px double rgb(209, 202, 202);
+        border-bottom: 5px double rgb(209, 202, 202);
+        background-color: rgb(236, 232, 232);
+    }
+    #nav-header a{
+        padding:5px 15px;
+        border-right: 1px solid rgb(209, 202, 202);
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: rgba(10, 153, 10, 0.644);
+    }
+    
+    #nav-header a:hover{
+        color: rgb(119, 5, 129);
+    }    
+
+    #left-content{
+        margin-top: 20px;
+    }
+
+    .dotted-line{
+        display: none;
+    }
+
+    #main-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #first-notice{
+        width: 50%;
+        margin-top: 50px;
+        order:2;
+    }
+
+    #left-content{
+        width: 25%;
+        order:1;
+    }
+
+    #right-content{
+        width: 25%;
+        order:3;
+    }
+
+    .secondary-news .second{
+        display: flex;
+        flex-direction: column-reverse;     
+    }
+
+    .secondary-news .second img{
+        width: 100%;
+    }
+
+    #coke a{
+        width: 250%; 
+    }
+}
+
