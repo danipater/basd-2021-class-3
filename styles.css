@@ -52,7 +52,9 @@
     padding: 7px;
 }
 
-#bottom p{
+
+
+#bottom a{
     margin: 10px;
     border:1.5px solid rgb(70, 68, 68);
     border-radius: 3px;
@@ -63,9 +65,10 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight:bold;
     transition: 0.3s ease-in-out 0.1s;
+    text-decoration: none;
 }
 
-#bottom p:hover{
+#bottom a:hover{
     transform:scale(1.05);
     background-color: rgb(119, 5, 129);
 }
@@ -218,6 +221,11 @@ footer #copy{
 }
 
 @media only screen and (min-width: 480px) {
+
+    body{
+        margin: 0px;
+    }
+
     #burger{
         display: none;
     }
@@ -233,7 +241,8 @@ footer #copy{
         background-color: rgb(236, 232, 232);
     }
     #nav-header a{
-        padding:5px 15px;
+        padding:3px 15px;
+        margin: 3px 0px;
         border-right: 1px solid rgb(209, 202, 202);
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
@@ -246,22 +255,65 @@ footer #copy{
         color: rgb(119, 5, 129);
     }  
 
+    #main-header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: rgb(240, 218, 238);
+    }
+
+    #main-title #the{
+        color: rgb(5, 131, 16);
+        margin:auto;
+        padding: 0;
+        padding-top: 10px;
+        font-size: 3vw; 
+    }
+    
+    #main-title #country{
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        font-family: Train One;
+        font-size: 10vw;
+        color: rgb(5, 131, 16);
+    }
+
     .dotted-line{
         display: none;
     }
 
+    #main-content{
+        display: flex;
+        flex-direction: row;
+        /*flex-wrap: wrap;*/
+    }
+
     #first-notice{
-        width: 100%;
+        width: 50%;
         margin-top: 20px;
+    }
+
+    .secondary-news{
+        /*display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;*/
+        width: 25%;
     }
 
     .secondary-news .second{
         display: flex;
-        flex-direction: column-reverse; 
+        flex-direction: column-reverse;
     
     }
 
     .secondary-news .second img{
+        width: 100%;
+    }
+
+    #coke {
         width: 100%;
     }
 
@@ -299,18 +351,33 @@ footer #copy{
         color: rgb(119, 5, 129);
     }    
 
-    #left-content{
-        margin-top: 20px;
+    #main-title #the{
+        color: rgb(5, 131, 16);
+        margin:auto;
+        padding: 0;
+        padding-top: 10px;
+        font-size: 3vw; 
     }
-
-    .dotted-line{
-        display: none;
+    
+    #main-title #country{
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        font-family: Train One;
+        font-size: 10vw;
+        color: rgb(5, 131, 16);
     }
 
     #main-content{
         display: flex;
         flex-direction: row;
+        align-content: flex-start;
+        align-items: flex-start;
         justify-content: space-between;
+    }
+
+    .dotted-line{
+        display: none;
     }
 
     #first-notice{
@@ -320,6 +387,7 @@ footer #copy{
     }
 
     #left-content{
+        margin-top: 20px;
         width: 25%;
         order:1;
     }
@@ -327,6 +395,7 @@ footer #copy{
     #right-content{
         width: 25%;
         order:3;
+        align-content: flex-start;
     }
 
     .secondary-news .second{
@@ -338,8 +407,40 @@ footer #copy{
         width: 100%;
     }
 
+    #coke {
+        width: 100%;
+    }  
+
     #coke a{
-        width: 250%; 
+        width: 200%; 
     }
 }
 
+@media only screen and (min-width: 980px){
+
+    #main-title #the{
+        color: rgb(5, 131, 16);
+        margin:auto;
+        padding: 0;
+        padding-top: 10px;
+        font-size: 3vw; 
+        width: 130px;
+    }
+    
+    #main-title #country{
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        font-family: Train One;
+        font-size: 10vw;
+        color: rgb(5, 131, 16);
+    }
+
+    #coke {
+        width: 100%;
+    }    
+    #coke a{
+        width: 200%; 
+    }
+
+}
